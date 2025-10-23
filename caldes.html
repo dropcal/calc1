@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input id="num1" type="text" placeholder="First Number">
+    <input id="num2" type="text" placeholder="Second Number">
+    <button onclick="sum()">+</button>
+    <button onclick="difference()">-</button>
+    <button onclick="quotient()">/</button>
+    <button onclick="multiply()">*</button>
+    <p id="showAnswer">Answer will be displayed here</p>
+</body>
+<script>
+    const sum = () => {
+        const answer = Number(num1.value) + Number(num2.value)
+        showAnswer.innerHTML = answer
+    }
+
+    const difference = () => {
+        const answer = Number(num1.value) - Number(num2.value)
+        showAnswer.innerHTML = answer
+    }
+
+    const quotient = () => {
+        const answer = Number(num1.value) / Number(num2.value)
+        showAnswer.innerHTML = answer
+    }
+
+    const multiply = () => {
+        const answer = Number(num1.value) * Number(num2.value)
+        showAnswer.innerHTML = answer
+    }
+</script>
+</html>
