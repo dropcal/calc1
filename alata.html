@@ -6,33 +6,56 @@
     <title>Document</title>
 </head>
 <body>
-    <input id="num1" type="text" placeholder="First Number">
-    <input id="num2" type="text" placeholder="Second Number">
-    <button onclick="sum()">+</button>
-    <button onclick="difference()">-</button>
-    <button onclick="quotient()">/</button>
-    <button onclick="multiply()">*</button>
-    <p id="showAnswer">Answer will be displayed here</p>
+    <!-- <div id="showMyFriend" style="background-color: chartreuse;">Hello Friend</div> -->
+
+    <!-- <p contenteditable="true">Good boy</p> -->
+     <!-- <h2 style="margin-bottom: 10px;">Multiplication</h2> -->
+    <input autofocus id="firstNumber" type="text" placeholder="Frst number">
+    <input id="secondNumber" type="text" placeholder="Second number"> =
+    <button onclick="multiply()">Multiply</button>
+    <button onclick="addition()">Addition</button>
+    <button onclick="substract()">Substract</button>
+    <button onclick="division()">Divide</button>
+    <p id="showResult" style="border: 2px solid black ; width: 200px; height: 20px;">Your Multiplication answer....</p><br>
+
+    <!-- Addition  -->
+    <!-- <h2 style="margin-bottom: 10px;">Additional</h2>
+    <input id="firstDigit" type="text" placeholder="First Digit">
+    <input id="secondDigit" type="text" placeholder="Second Digit"> =
+    <button onclick="addition()">Addition</button>
+    <p id="showAnswer" style="border: 2px solid black; width: 200px; height: 20px;">Your Addition answer....</p><br> -->
+
+    <!-- Substitution -->
+    <!-- <h2 style="margin-bottom: 10px;">Substitution</h2>
+    <input id="firstMinus" type="text" placeholder="First Digit">
+    <input id="secondMinus" type="text" placeholder="Second Digit"> =
+    <button onclick="substract()">Substract</button>
+    <p id="showMoney" style="border: 2px solid black; width: 200px; height: 20px;">Your Substraction answer....</p><br> -->
+
+    <!-- Division -->
+    <!-- <h2 style="margin-bottom: 10px;"> Division</h2>
+    <input id="firstDivide" type="text" placeholder="Enter your value">
+    <input id="secondDivide" type="text" placeholder="Enter your value"> =
+    <button onclick="division()">Divide</button>
+    <p id="showDivide" style="border: 2px solid black; width: 200px; height: 20px;">Your Division answer....</p><br> -->
+
+    <!-- Area of a Trapezium -->
+    <!-- <h2 style="margin-bottom: 10px;">Area of Trapezium</h2>
+    <input id="firstBase" type="text" placeholder="First Base">
+    <input id="secondBase" type="text" placeholder="Second Base">
+    <input id="onlyHeight" type="text" placeholder="Height"> =
+    <button onclick="trapezium()">Trapezium</button>
+    <p id="showTrapezium" style="border: 2px solid black; width: 200px; height: 20px;">Area of Trapezium answer....</p><br> -->
+
+    <!-- Area of Body Mass Index   -->
+    <!-- <h2 style="margin-bottom: 10px;">Area of a Body Mass Index(BMI)</h2>
+    <input id="firstWeight" type="text" placeholder="Enter your weight">
+    <input id="firstHeight" type="text" placeholder="Enter your height"> =
+    <button onclick="BMI()">BMI</button>
+    <p id="showBMI" style="border: 2px solid black; width: 200px; height: 20px;">Your BMI answer....</p> -->
+
+    
+
 </body>
-<script>
-    const sum = () => {
-        const answer = Number(num1.value) + Number(num2.value)
-        showAnswer.innerHTML = answer
-    }
-
-    const difference = () => {
-        const answer = Number(num1.value) - Number(num2.value)
-        showAnswer.innerHTML = answer
-    }
-
-    const quotient = () => {
-        const answer = Number(num1.value) / Number(num2.value)
-        showAnswer.innerHTML = answer
-    }
-
-    const multiply = () => {
-        const answer = Number(num1.value) * Number(num2.value)
-        showAnswer.innerHTML = answer
-    }
-</script>
-</html>
+<script src="./script.js"></script>   
+</html> 
